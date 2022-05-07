@@ -161,3 +161,6 @@ cython_debug/
 
 # celery beat files
 celerybeat-schedule.*
+
+# keys
+real_estate_backend/token_settings.py
