@@ -26,11 +26,14 @@ class TransferSingleReceiver(AbstractEventReceiver):
             filename = "%064X" % id_
 
             try:
-                real_estateBase_info = RealEstateBaseInfo.objects.get(creator=to_)
-
+                real_estateBase_info = RealEstateBaseInfo.objects.filter(creator=to_.lower()).last()
+                
                 image = image_tmp_bucket.get_object("%d.jpg" % real_estateBase_info.id)
                 image_bucket.put_object("%s.jpg" % filename, image)
+
+                real_estateBase_info.delete()
             except Exception as e:
+                print(e)
                 name = str()
                 description = str()
                 img_url = str()
