@@ -19,6 +19,6 @@ from django.urls import path
 from token_info.views import RealEstateBaseInfoAPIView
 
 urlpatterns = [
-    path('api/', RealEstateBaseInfoAPIView.as_view()),
+    path('api/publishRealEstate/', RealEstateBaseInfoAPIView.as_view()),
     path('admin/', admin.site.urls),
 ]
