@@ -133,7 +133,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # ETHEREUM NODE CONFIG
 
-ETHEREUM_NODE_URI = 'http://localhost:7545'
+ETHEREUM_NODE_URI = 'https://rinkeby.infura.io/v3/ccc4ee5f9cb54632b14d584535a654e1'
+ETHEREUM_GETH_POA = True
+ETHEREUM_LOGS_BATCH_SIZE = 10000
+ETHEREUM_LOGS_FILTER_AVAILABLE = True
 
 # Cross-Origin Resource Sharing Settings
 
