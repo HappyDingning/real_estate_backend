@@ -164,3 +164,4 @@ celerybeat-schedule.*
 
 # keys
 real_estate_backend/token_settings.py
+real_estate_backend/settings.py
