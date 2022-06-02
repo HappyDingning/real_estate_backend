@@ -133,7 +133,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # ETHEREUM NODE CONFIG
 
-ETHEREUM_NODE_URI = 'https://rinkeby.infura.io/v3/ccc4ee5f9cb54632b14d584535a654e1'
+# need to config by yourself
+# you can require a key from https://infura.io/
+ETHEREUM_NODE_URI = 'your api key'
 ETHEREUM_GETH_POA = True
 ETHEREUM_LOGS_BATCH_SIZE = 10000
 ETHEREUM_LOGS_FILTER_AVAILABLE = True
