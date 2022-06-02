@@ -33,7 +33,6 @@ class TransferSingleReceiver(AbstractEventReceiver):
 
                 real_estateBase_info.delete()
             except Exception as e:
-                print(e)
                 name = str()
                 description = str()
                 img_url = str()
